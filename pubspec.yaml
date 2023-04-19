@@ -1,0 +1,24 @@
+name: university_trello_analog
+description: A new Flutter project.
+version: 1.0.0+1
+publish_to: none
+environment:
+  sdk: '>=2.19.2 <3.0.0'
+dependencies:
+  appflowy_board: 
+    path: C:/Users/fedor/AppData/Local/Pub/Cache/hosted/pub.dev/appflowy_board-0.1.0_akrona_mod
+  cross_scroll: ^0.0.75
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.1.2
+  flutter_localizations:
+    sdk: flutter
+  intl: any
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
