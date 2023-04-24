@@ -197,9 +197,8 @@ class ReorderFlexState extends State<ReorderFlex>
       _attachedScrollPosition = null;
     }
 
-    _scrollController = widget.scrollController ??
-        PrimaryScrollController.of(context) ??
-        ScrollController();
+    _scrollController =
+        widget.scrollController ?? PrimaryScrollController.of(context);
 
     if (_scrollController.hasClients) {
       _attachedScrollPosition = Scrollable.maybeOf(context)?.position;
