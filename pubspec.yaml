@@ -6,7 +6,7 @@ environment:
   sdk: '>=2.19.2 <3.0.0'
 dependencies:
   appflowy_board: 
-    path: C:/Users/fedor/AppData/Local/Pub/Cache/hosted/pub.dev/appflowy_board-0.1.0_akrona_mod
+    path: packages/appflowy_board
   cross_scroll: ^0.0.75
   equatable: ^2.0.5
   firebase_auth: ^4.4.2
