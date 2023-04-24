@@ -5,7 +5,8 @@ part 'workspace_event.dart';
 part 'workspace_state.dart';
 
 class WorkspaceBloc extends Bloc<WorkspaceEvent, WorkspaceState> {
-  WorkspaceBloc() : super(WorkspaceInitial()) {
+  WorkspaceBloc()
+      : super(const WorkspaceState(status: WorkspaceStatus.initial)) {
     //для теста
     on<FetchedWorkspaceBoardEvent>((event, emit) {
       emit(state.copyWith(status: WorkspaceStatus.loaded));

@@ -4,7 +4,7 @@ enum WorkspaceStatus { initial, loading, loaded, failure }
 
 class WorkspaceState extends Equatable {
   const WorkspaceState({
-    this.status = WorkspaceStatus.loaded,
+    required this.status,
   });
   final WorkspaceStatus status;
   WorkspaceState copyWith({
@@ -23,9 +23,3 @@ class WorkspaceState extends Equatable {
   @override
   List<Object?> get props => [status];
 }
-
-class WorkspaceInitial extends WorkspaceState {}
-
-class WorkspaceLoading extends WorkspaceState {}
-
-class WorkspaceLoaded extends WorkspaceState {}
